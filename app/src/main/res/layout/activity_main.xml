@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.arjinmc.rippleeffectlayout.MainActivity"
+    android:id="@+id/parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <com.arjinmc.rippleeffectlayout.RippleEffectLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:minRadius="100"
+        app:maxRadius="800"
+        app:colorAlpha="0.2"
+        app:color="#000000"
+        app:useCenter="true"
+        android:padding="16dp">
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATTENTION!"
+            />
+    </com.arjinmc.rippleeffectlayout.RippleEffectLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button"
+        android:background="@drawable/ripple"/>
+
+</LinearLayout>
