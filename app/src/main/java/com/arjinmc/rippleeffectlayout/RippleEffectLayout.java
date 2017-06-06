@@ -31,8 +31,8 @@ public class RippleEffectLayout extends FrameLayout {
 
     private int mColor = DEFAULT_COLOR;
     private int mAlpha = DEFAULT_ALPHA;
-    private int mMinRadius = DEFAULT_MIN_RADIUS;
-    private int mMaxRadius;
+    private float mMinRadius = 0;
+    private float mMaxRadius;
     private boolean useCenter;
 
     private Paint mPaint;
@@ -97,8 +97,8 @@ public class RippleEffectLayout extends FrameLayout {
             Params params = new Params();
             params.color = typedArray.getColor(R.styleable.RippleEffectLayout_color, DEFAULT_COLOR);
             params.alpha = typedArray.getFloat(R.styleable.RippleEffectLayout_colorAlpha, DEFAULT_ALPHA);
-            params.minRadius = typedArray.getInt(R.styleable.RippleEffectLayout_minRadius, DEFAULT_MIN_RADIUS);
-            params.maxRadius = typedArray.getInt(R.styleable.RippleEffectLayout_maxRadius, 0);
+            params.minRadius = typedArray.getDimension(R.styleable.RippleEffectLayout_minRadius, DEFAULT_MIN_RADIUS);
+            params.maxRadius = typedArray.getDimension(R.styleable.RippleEffectLayout_maxRadius, 0);
             params.useCenter = typedArray.getBoolean(R.styleable.RippleEffectLayout_useCenter, false);
             setParams(params);
         }
@@ -202,12 +202,12 @@ public class RippleEffectLayout extends FrameLayout {
             return this;
         }
 
-        public Builder minRadius(int radius) {
+        public Builder minRadius(float radius) {
             params.minRadius = radius;
             return this;
         }
 
-        public Builder maxRadius(int radius) {
+        public Builder maxRadius(float radius) {
             params.maxRadius = radius;
             return this;
         }
@@ -232,8 +232,8 @@ public class RippleEffectLayout extends FrameLayout {
     private static class Params {
         public int color;
         public float alpha;
-        public int minRadius;
-        public int maxRadius;
+        public float minRadius;
+        public float maxRadius;
         public boolean useCenter;
         public View childView;
     }
