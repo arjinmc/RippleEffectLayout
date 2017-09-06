@@ -16,8 +16,8 @@
     <com.arjinmc.rippleeffectlayout.RippleEffectLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:minRadius="100"
-        app:maxRadius="800"
+        app:minRadius="100dp"
+        app:maxRadius="800dp"
         app:colorAlpha="0.2"
         app:color="#000000"
         app:useCenter="true"
@@ -33,7 +33,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="button"
-        android:background="@drawable/ripple"/>
+        android:text="button"/>
 
 </LinearLayout>
