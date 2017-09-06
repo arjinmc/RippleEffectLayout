@@ -18,7 +18,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 /**
- * Created by Eminem Lu on 2/6/17.
+ * Created by Eminem Lo on 2/6/17.
  * Email arjinmc@hotmail.com
  */
 
