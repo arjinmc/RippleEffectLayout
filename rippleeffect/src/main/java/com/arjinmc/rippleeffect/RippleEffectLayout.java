@@ -1,4 +1,4 @@
-package com.arjinmc.rippleeffectlayout;
+package com.arjinmc.rippleeffect;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

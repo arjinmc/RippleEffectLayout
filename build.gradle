@@ -3,6 +3,7 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
@@ -15,9 +16,21 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        google()
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+
+    buildToolsVersion = "26.0.2"
+    compileSdkVersion = 25
+    targetSdkVersion = 25
+    supportVersion = "25.3.1"
+    espressoVersion = "3.0.1"
+    junitVersion = "4.12"
+
 }

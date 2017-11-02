@@ -10,6 +10,8 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.arjinmc.rippleeffect.RippleEffectLayout;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
