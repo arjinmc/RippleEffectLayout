@@ -1,6 +1,22 @@
 # RippleEffectLayout
 RippleEffectLayout like Android 5.0 ripple effect for button, support every view.
 
+## import
+
+### gradle
+```code
+compile 'com.arjinmc.android:rippleeffect:1.0'
+```
+### maven
+```code
+<dependency>
+  <groupId>com.arjinmc.android</groupId>
+  <artifactId>rippleeffect</artifactId>
+  <version>1.0</version>
+  <type>pom</type>
+</dependency>
+```
+
 ![img](sample.gif)
 
 ## xml way
