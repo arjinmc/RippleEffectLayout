@@ -3,8 +3,16 @@ RippleEffectLayout like Android 5.0 ripple effect for button, support every view
 
 ## import
 
+This repo has been upload to JCenter.
+
 ### gradle
 ```code
+
+repositories {
+    jcenter()
+}
+
+
 compile 'com.arjinmc.android:rippleeffect:1.0'
 ```
 ### maven
